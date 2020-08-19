@@ -10,9 +10,9 @@ import java.io.Serializable;
 // 유지 보수 측면에서 직렬화 클래스를 따로 만드는게 도움 된다.
 @Getter
 public class SessionUser implements Serializable {
-    private String name;
-    private String email;
-    private String picture;
+    private final String name;
+    private final String email;
+    private final String picture;
 
     public SessionUser(User user) {
         this.name = user.getName();
